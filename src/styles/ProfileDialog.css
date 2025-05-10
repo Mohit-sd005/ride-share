@@ -1,0 +1,48 @@
+.profile-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .profile-dialog-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .profile-dialog-content h2 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+  }
+  
+  .profile-dialog-content p {
+    margin: 10px 0;
+  }
+  
+  .profile-dialog-content button {
+    padding: 12px;
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .profile-dialog-content button:hover {
+    background-color: #1565c0;
+  }
+
+  
+  
