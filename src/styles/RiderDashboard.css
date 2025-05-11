@@ -2,6 +2,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+   overflow: auto;
   }
   
   .navbar {
@@ -46,15 +47,38 @@
     margin-bottom: 20px;
   }
   
+  .my-rides-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-ride-button {
+    padding: 10px 20px;
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .post-ride-button:hover {
+    background-color: #1565c0;
+  }
+  
   .post-ride-form {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
-  .post-ride-form h2 {
+  .post-ride-form h3 {
     color: #0d47a1;
     margin-bottom: 20px;
   }
@@ -72,22 +96,35 @@
     font-size: 16px;
   }
   
-  .post-ride-form button {
+  .post-ride-form input[type="file"] {
+    padding: 8px;
+    border: 1px dashed #90caf9;
+    background-color: #f5f5f5;
+  }
+  
+  .post-ride-form button[type="submit"] {
     padding: 12px;
     background-color: #0d47a1;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
   }
   
-  .post-ride-form button:hover {
+  .post-ride-form button[type="submit"]:hover {
     background-color: #1565c0;
   }
   
   .rides-list {
+    overflow: auto;
     display: grid;
+    /* display: none; */
     gap: 20px;
+    width: 100%;
+    height: 400px;
   }
   
   .ride-card {
@@ -129,3 +166,4 @@
     border-radius: 5px;
     margin: 5px 0;
   }
+  
